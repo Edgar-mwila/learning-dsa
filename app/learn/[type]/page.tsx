@@ -13,7 +13,7 @@ export default function CategoryPage({ params }: { params: { type: string } }) {
   }
 
   const categoryTitle =
-    type === "data-structures" ? "Data Structures" : type === "sorting" ? "Sorting Algorithms" : "Searching Algorithms"
+    type === "data-structures" ? "Data Structures" : type === "sorting" ? "Sorting Algorithms" : type === "searching" ? "Searching Algorithms" : type === "graph-algorithms" ? "Graph Algorithms" : type === "dynamic-programming" ? "Dynamic Programming" : "Advanced topics"
 
   return (
     <div className="min-h-screen bg-gray-50">
