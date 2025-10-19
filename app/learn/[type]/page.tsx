@@ -4,8 +4,8 @@ import { TopicCard } from "@/components/topic-card"
 import { getTopicsByType } from "@/lib/content"
 import { notFound } from "next/navigation"
 
-export default function CategoryPage({ params }: { params: { type: string } }) {
-  const { type } = params
+export default async function CategoryPage({ params }: { params: { type: string } }) {
+  const { type } = await params
   const topics = getTopicsByType(type)
 
   if (!topics) {

@@ -3050,7 +3050,7 @@ export function getVisualization(topicId: string): Visualization | null {
   if (topicId === "arrays") {
     return arrayVisualization
   }
-  if (topicId === "linked-list") {
+  if (topicId === "linked-lists") {
     return linkedListVisualization
   }
   if (topicId === "doubly-linked-lists") {

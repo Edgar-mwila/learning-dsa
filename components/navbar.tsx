@@ -18,20 +18,10 @@ export function Navbar() {
 
           <div className="hidden md:flex items-center space-x-8">
             <Link href="/learn" className="text-gray-700 hover:text-purple-700 transition-colors">
-              Learn
-            </Link>
-            <Link href="/learn/data-structures" className="text-gray-700 hover:text-purple-700 transition-colors">
-              Data Structures
-            </Link>
-            <Link href="/learn/sorting" className="text-gray-700 hover:text-purple-700 transition-colors">
-              Sorting
-            </Link>
-            <Link href="/learn/searching" className="text-gray-700 hover:text-purple-700 transition-colors">
-              Searching
-            </Link>
-            <Button variant="outline" className="border-purple-700 text-purple-700 hover:bg-purple-50">
-              Get Started
-            </Button>
+              <Button variant="outline" className="border-purple-700 text-purple-700 hover:bg-purple-50">
+                Get Started
+              </Button>
+            </Link>            
           </div>
 
           <div className="md:hidden">
@@ -51,36 +41,14 @@ export function Navbar() {
               className="block text-gray-700 hover:text-purple-700 transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
-              Learn
+              <Button
+                variant="outline"
+                className="w-full border-purple-700 text-purple-700 hover:bg-purple-50"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Get Started
+              </Button>
             </Link>
-            <Link
-              href="/learn/data-structures"
-              className="block text-gray-700 hover:text-purple-700 transition-colors"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Data Structures
-            </Link>
-            <Link
-              href="/learn/sorting"
-              className="block text-gray-700 hover:text-purple-700 transition-colors"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Sorting
-            </Link>
-            <Link
-              href="/learn/searching"
-              className="block text-gray-700 hover:text-purple-700 transition-colors"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Searching
-            </Link>
-            <Button
-              variant="outline"
-              className="w-full border-purple-700 text-purple-700 hover:bg-purple-50"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Get Started
-            </Button>
           </div>
         )}
       </div>

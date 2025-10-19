@@ -9,7 +9,6 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "AlgoViz - Data Structures & Algorithms Learning Platform",
   description: "Learn data structures and algorithms with interactive visualizations",
-    generator: 'v0.dev'
 }
 
 export default function RootLayout({
